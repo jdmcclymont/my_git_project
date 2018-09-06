@@ -37,3 +37,19 @@ status of the local copy in relation to the upstream repository. The **master** 
 
 ## Chapter 3 Branching in Git
 
+To show current branches: `$ git branch -a`
+
+To create a new branch: `$ git branch test_branch`
+
+To change to new branch: `$ get checkout test_branch`
+
+To create AND change to new branch: `$ git checkout -b new_test_branch`
+
+The above commands create branches based on the latest commit of the current active branch - which here is **master**. To create a branch based on a certain commit, idenfify it with its hash: `$ git checkout -b old_commit_branch cafb55d`
+
+To rename the current branch: `$ git branch -m renamed_branch`
+
+To delete a branch: `$ git branch -D new_test_branch` 
+
+***
+## Chapter 4 Using Git in a Team
